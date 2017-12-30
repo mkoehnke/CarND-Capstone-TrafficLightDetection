@@ -18,7 +18,6 @@ sudo pip install matplotlib
 ```
 # From root directory
 protoc object_detection/protos/*.proto --python_out=.
-
 ```
 
 #### Add Libraries to PYTHONPATH
@@ -38,9 +37,13 @@ curl http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet10
 
 ### Creating TFRecord files
 
-`python data_conversion_udacity_sim.py --output_path sim_data.record`
+```
+python data_conversion_udacity_sim.py --output_path sim_data.record
+```
 
-`python data_conversion_udacity_real.py --output_path real_data.record`
+```
+python data_conversion_udacity_real.py --output_path real_data.record
+```
 
 
 ## Training
@@ -49,25 +52,35 @@ curl http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet10
 
 #### Training
 
-`python object_detection/train.py --pipeline_config_path=config/faster_rcnn-traffic-udacity_sim.config --train_dir=data/sim_training_data/sim_data_capture`
+```
+python object_detection/train.py --pipeline_config_path=config/faster_rcnn-traffic-udacity_sim.config --train_dir=data/sim_training_data/sim_data_capture
+```
 
 #### Saving for Inference
 
-`python object_detection/export_inference_graph.py --pipeline_config_path=config/faster_rcnn-traffic-udacity_sim.config --trained_checkpoint_prefix=data/sim_training_data/sim_data_capture/model.ckpt-5000 --output_directory=frozen_sim/`
+```
+python object_detection/export_inference_graph.py --pipeline_config_path=config/faster_rcnn-traffic-udacity_sim.config --trained_checkpoint_prefix=data/sim_training_data/sim_data_capture/model.ckpt-5000 --output_directory=frozen_sim/
+```
 
 
 ### For Real Data
 
 #### Training
 
-`python object_detection/train.py --pipeline_config_path=config/faster_rcnn-traffic_udacity_real.config --train_dir=data/real_training_data`
+```
+python object_detection/train.py --pipeline_config_path=config/faster_rcnn-traffic_udacity_real.config --train_dir=data/real_training_data
+```
 
 #### Saving for Inference
 
-`python object_detection/export_inference_graph.py --pipeline_config_path=config/faster_rcnn-traffic_udacity_real.config --trained_checkpoint_prefix=data/real_training_data/model.ckpt-10000 --output_directory=frozen_real/`
+```
+python object_detection/export_inference_graph.py --pipeline_config_path=config/faster_rcnn-traffic_udacity_real.config --trained_checkpoint_prefix=data/real_training_data/model.ckpt-10000 --output_directory=frozen_real/
+```
 
 
 ## Attributions
 
 Most of the info / files in this repository were taken from here:
-[https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI)
+
+- [https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI) 
+- [https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62](https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62)
