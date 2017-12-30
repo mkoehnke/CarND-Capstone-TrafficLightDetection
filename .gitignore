@@ -58,3 +58,5 @@ model/model.ckpt.index
 model/model.ckpt.meta
 model/pipeline.config
 model/saved_model/
+
+.ipynb_checkpoints
