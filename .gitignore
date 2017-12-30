@@ -53,10 +53,16 @@ docs/_build/
 # Custom
 model/checkpoint
 model/frozen_inference_graph.pb
-model/model.ckpt.data-00000-of-00001
-model/model.ckpt.index
-model/model.ckpt.meta
+model/model.ckpt*
 model/pipeline.config
 model/saved_model/
 
 .ipynb_checkpoints
+
+data/sim_training_data/sim_data_capture/checkpoint
+data/sim_training_data/sim_data_capture/events.*
+data/sim_training_data/sim_data_capture/graph.pbtxt
+data/sim_training_data/sim_data_capture/model.ckpt*
+data/sim_training_data/sim_data_capture/pipeline.config
+
+frozen_sim/
