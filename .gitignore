@@ -51,4 +51,10 @@ coverage.xml
 docs/_build/
 
 # Custom
-faster_rcnn_resnet101_coco_11_06_2017/
+model/checkpoint
+model/frozen_inference_graph.pb
+model/model.ckpt.data-00000-of-00001
+model/model.ckpt.index
+model/model.ckpt.meta
+model/pipeline.config
+model/saved_model/
