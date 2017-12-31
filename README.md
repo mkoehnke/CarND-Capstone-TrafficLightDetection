@@ -80,7 +80,4 @@ python object_detection/export_inference_graph.py --pipeline_config_path=config/
 
 ## Attributions
 
-Most of the info / files in this repository were taken from here:
-
-- [https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI) 
 - [https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62](https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62)
