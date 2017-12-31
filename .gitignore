@@ -65,4 +65,10 @@ data/sim_training_data/sim_data_capture/graph.pbtxt
 data/sim_training_data/sim_data_capture/model.ckpt*
 data/sim_training_data/sim_data_capture/pipeline.config
 
-frozen_sim/
+data/real_training_data/real_data_capture/checkpoint
+data/real_training_data/real_data_capture/events.*
+data/real_training_data/real_data_capture/graph.pbtxt
+data/real_training_data/real_data_capture/model.ckpt*
+data/real_training_data/real_data_capture/pipeline.config
+
+.DS_Store
